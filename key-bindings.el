@@ -155,6 +155,7 @@
 (global-set-key (kbd "C-x C--") 'rotate-windows)
 (global-unset-key (kbd "C-x C-+")) ;; don't zoom like this
 
+(global-set-key (kbd "C-x +") 'other-window)
 (global-set-key (kbd "C-x 3") 'split-window-right-and-move-there-dammit)
 
 ;; Add region to *multifile*
@@ -322,9 +323,21 @@
 (global-set-key (kbd "C-x C-o in") (ffip-create-pattern-file-finder "*.ini"))
 (global-set-key (kbd "C-x C-o gr") (ffip-create-pattern-file-finder "*.groovy"))
 
+;; Indentation
+
+;; Bind (shift-right) and (shift-left) function to your favorite keys. I use
+;; the following so that Ctrl-Shift-Right Arrow moves selected text one
+;; column to the right, Ctrl-Shift-Left Arrow moves selected text one
+;; column to the left:
+
+(global-set-key (kbd "C-c >") 'shift-right)
+(global-set-key (kbd "C-c <") 'shift-left)
+
 ;; View occurrence in occur mode
 (define-key occur-mode-map (kbd "v") 'occur-mode-display-occurrence)
 (define-key occur-mode-map (kbd "n") 'next-line)
 (define-key occur-mode-map (kbd "p") 'previous-line)
+
+
 
 (provide 'key-bindings)

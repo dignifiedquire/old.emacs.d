@@ -1,0 +1,128 @@
+hg branch
+hg update default
+hg pull
+hg update
+hg update 8100_unique_uploads
+hg status
+hg shelve help
+hg help shelve
+hg shelve  -l
+hg shelve source/plugins/multi-upload/multi-upload.js -n mu
+hg update 8100_unique_uploads
+hg merge default
+hg commit -m "Merge in default"
+hg status
+hg help shelve 
+hg shelve -l
+hg shelve -n mu
+hg unshelve -n mu
+ls
+hg status
+hg diff
+hg commit -m "Refactor docs in multi-uploads Part1."
+hg update default
+cd ..
+mkdir friday
+cd friday/
+git clone https://github.com/dignifiedquire/yaas client_angular
+git clone https://github.com/dignifiedquire/yaas.git client_angular
+git clone https://github.com/Dignifiedquire/yaas client_angular
+cd client_angular/
+npm install
+cd ..
+cd ../site/
+middleman -h
+middleman
+middleman
+cd ../../..
+cd ..
+cd ..
+middleman
+git status
+git add source
+git commit -m "Blog article: The Journey."
+git fetch upstream
+git rebase upstream/master
+git branch
+git checkout -b blog_journey
+git checkout master
+git log
+git reset --hard HEAD^
+git checkout blog_journey
+git push -u upstream blog_journey
+middleman
+git reset --soft HEAD^
+git status
+git log
+git add source
+git commit -m "Blog article: The Journey."
+git push -f upstream blog_journey
+cd ../../..
+hg branch
+hg pull
+hg update
+hg branches
+hg update "8100_unique_uploads"
+hg merge default
+hg commit -m "Merge in default"
+hg status
+sudo nginx
+cd ..
+git clone https://dignified@bitbucket.org/applicationcraft/sharejs-codio
+ls
+cd sharejs-codio/
+hg pull
+hg update
+git clone https://github.com/codio/ShareJS sharejs
+rm -rf sharejs
+ls
+cd ..
+git clone https://github.com/codio/ShareJS sharejs
+mv -r sharejs-codio sharejs/sharejs-codio
+mv sharejs-codio sharejs/
+ls sharejs/
+cd sharejs/
+cd sharejs-codio/
+npm install
+ls
+cp codio-options.example.js codio-options.js
+./sharejs-codio.conf
+./sharejs-codio
+npm ls
+hg branch
+hg branches
+./sharejs-codio
+sudo nginx -s stop
+sudo nginx -c stop
+sudo nginx
+sudo nginx -c stop
+sudo nginx
+ps -ax |grep nginx
+sudo nginx -c stop
+sudo nginx -s stop
+sudo nginx
+ls node_modules/
+ls ../
+cd ..
+npm install
+cd sharejs-codio/
+./sharejs-codio
+cd ..
+cd ../
+cd client_old/
+cd ..
+cd client
+hg merge default
+hg resolve --mark .
+hg status
+hg commit -m "Merge in default."
+hg status
+rm */*.orig
+hg status
+rm **/*.orig
+hg status
+grunt jshint
+exit
+grunt jshint --no-color > errors.txt 
+grunt jshint --no-color > errors.txt 
+grunt jshint --no-color > errors.txt 
